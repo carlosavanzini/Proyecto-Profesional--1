@@ -5,44 +5,46 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Contacto | Guayerd Bikes - Bicicletas de Competición y Urbanas</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload no-sidebar">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
+<head>
+    <title>Contacto | Guayerd Bikes - Bicicletas de Competición y Urbanas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="home.html">Verti</a></h1>
-								<span>by HTML5 UP</span>
-							</div>
+<body class="is-preload no-sidebar">
+    <div id="page-wrapper">
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="home.html">Home</a></li>
-									<li class="current"><a href="productos.html">Productos</a></li>
-									<li class="current"><a href="contacto.html">Contacto</a></li>
-								</ul>
-							</nav>
+        <!-- Header -->
+        <div id="header-wrapper">
+            <header id="header" class="container">
 
-					</header>
-				</div>
+                <!-- Logo -->
+                <div id="logo">
+                    <h1><a href="home.html">Verti</a></h1>
+                    <span>by HTML5 UP</span>
+                </div>
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div id="content">
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="home.html">Home</a></li>
+                        <li class="current"><a href="productos.html">Productos</a></li>
+                        <li class="current"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
 
-							<!-- Content -->
-								<article>
+            </header>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+                <div id="content">
+
+                    <!-- Content -->
+                    <!--<article>
 
 									<h2>No Sidebar</h2>
 
@@ -68,98 +70,147 @@
 									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
 									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
 
-								</article>
+								</article> -->
 
-						</div>
-					</div>
-				</div>
+                    <!-- FORMULARIO DE CONTACTO -->
 
-			<!-- Footer -->
-			<div id="footer-wrapper">
-				<footer id="footer" class="container">
-					<div class="row">
-						<div class="col-3 col-6-medium col-12-small">
+                    <!-- Inicio código insertado -->
 
-							<!-- Links -->
-								<section class="widget links">
-									<h3>Random Stuff</h3>
-									<ul class="style2">
-										<li><a href="#">Etiam feugiat condimentum</a></li>
-										<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-										<li><a href="#">Sed porttitor cras in erat nec</a></li>
-										<li><a href="#">Felis varius pellentesque potenti</a></li>
-										<li><a href="#">Nullam scelerisque blandit leo</a></li>
-									</ul>
-								</section>
+                    <h2>Contacto</h2>
 
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
+                    <!-- <form action=method="POST" class="form"> -->
+                    <form action="https://ptsv2.com/t/guayerdDemo/post" method="POST">
 
-							<!-- Links -->
-								<section class="widget links">
-									<h3>Random Stuff</h3>
-									<ul class="style2">
-										<li><a href="#">Etiam feugiat condimentum</a></li>
-										<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-										<li><a href="#">Sed porttitor cras in erat nec</a></li>
-										<li><a href="#">Felis varius pellentesque potenti</a></li>
-										<li><a href="#">Nullam scelerisque blandit leo</a></li>
-									</ul>
-								</section>
+                        <div>
+                            <label for="nombre">Nombre </label>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div>
+                            <label for="email">Email </label>
+                            <input type="email" name="email" placeholder="Ingrese su E-Mail" required>
+                        </div>
+                        <div>
+                            <label for="tema">Tema </label>
+                            <!-- Tema --><select name="tema" required>
+								<option value="venta">Venta</option>
+								<option value="trabajo">Trabajo</option>
+								<option value="reparacion">Reparación</option>
+								<option value="otros">Otros</option>
+								</select>
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje </label>
+                            <textarea name="mensaje" cols="" rows="" placeholder="Ingrese su consulta" required></textarea>
+                        </div>
+                        <div>
+                            <button name="enviar" class="boton">Enviar</button>
+                        </div>
+                    </form>
+                    <!-- Dirección para el mapa: 
+					Avenida Corrientes 6237, CABA.	-->
 
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
+                    <!-- MAPA -->
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.512780793885!2d-58.4500563851957!3d-34.59119276434157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f12e398ecd%3A0x98abf435fbfab70!2sAv.%20Corrientes%206237%2C%20C1427BPA%20CABA!5e0!3m2!1ses-419!2sar!4v1626215769377!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- Fin código insertado -->
 
-							<!-- Links -->
-								<section class="widget links">
-									<h3>Random Stuff</h3>
-									<ul class="style2">
-										<li><a href="#">Etiam feugiat condimentum</a></li>
-										<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-										<li><a href="#">Sed porttitor cras in erat nec</a></li>
-										<li><a href="#">Felis varius pellentesque potenti</a></li>
-										<li><a href="#">Nullam scelerisque blandit leo</a></li>
-									</ul>
-								</section>
+                </div>
+            </div>
+        </div>
 
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
 
-							<!-- Contact -->
-								<section class="widget contact">
-									<h3>Contactanos</h3>
-									<ul>
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-									</ul>
-									<p>Avenida Corrientes 6237, CABA.</p>
-								</section>
 
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy;Desarroladores: Equipo 3</li><li>Diseñadores: Equipo 3</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <footer id="footer" class="container">
+                <div class="row">
+                    <div class="col-3 col-6-medium col-12-small">
 
-		</div>
+                        <!-- Links -->
+                        <section class="widget links">
+                            <h3>Random Stuff</h3>
+                            <ul class="style2">
+                                <li><a href="#">Etiam feugiat condimentum</a></li>
+                                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                                <li><a href="#">Sed porttitor cras in erat nec</a></li>
+                                <li><a href="#">Felis varius pellentesque potenti</a></li>
+                                <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                            </ul>
+                        </section>
 
-		<!-- Scripts -->
+                    </div>
+                    <div class="col-3 col-6-medium col-12-small">
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                        <!-- Links -->
+                        <section class="widget links">
+                            <h3>Random Stuff</h3>
+                            <ul class="style2">
+                                <li><a href="#">Etiam feugiat condimentum</a></li>
+                                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                                <li><a href="#">Sed porttitor cras in erat nec</a></li>
+                                <li><a href="#">Felis varius pellentesque potenti</a></li>
+                                <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                            </ul>
+                        </section>
 
-	</body>
+                    </div>
+                    <div class="col-3 col-6-medium col-12-small">
+
+                        <!-- Links -->
+                        <section class="widget links">
+                            <h3>Random Stuff</h3>
+                            <ul class="style2">
+                                <li><a href="#">Etiam feugiat condimentum</a></li>
+                                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                                <li><a href="#">Sed porttitor cras in erat nec</a></li>
+                                <li><a href="#">Felis varius pellentesque potenti</a></li>
+                                <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-6-medium col-12-small">
+
+                        <!-- Contact -->
+                        <section class="widget contact">
+                            <h3>Contactanos</h3>
+                            <ul>
+                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+                            </ul>
+                            <p>Avenida Corrientes 6237, CABA.</p>
+                        </section>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="copyright">
+                            <ul class="menu">
+                                <li>&copy;Desarroladores: Equipo 3</li>
+                                <li>Diseñadores: Equipo 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
