@@ -2006,16 +2006,18 @@ input, select, textarea {
 					background: #fff;
 				}
 
-				#nav ul li.current a {
+				#nav ul li.current a:hover {
 					background: #444;
 					color: #fff;
+                  
                     
 				}
                 li.current{
                     margin-top: 45px;
+                    font-size: 30px;
                     
                 }
-
+                
 	.dropotron {
 		background: #fff;
 		letter-spacing: 0.025em;
