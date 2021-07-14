@@ -86,8 +86,17 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+	#logo, img{
+		width: 200px;
+		height: auto;
+		border-radius: 10px;
+		
+	
+	}
+
 	*, *:before, *:after {
 		box-sizing: inherit;
+		
 	}
 
 	body {
@@ -143,6 +152,7 @@ input, select, textarea {
 			color: inherit;
 			text-decoration: none;
 			outline: 0;
+			margin-top: 50px;
 		}
 
 	h2 {
@@ -202,6 +212,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
+		
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -242,7 +253,8 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+		align-self: center;
+		;
 	}
 
 		.row > * {
@@ -430,7 +442,7 @@ input, select, textarea {
 
 		.row {
 			margin-top: -40px;
-			margin-left: -40px;
+			margin-left: 570px;
 		}
 
 			.row > * {
@@ -438,7 +450,7 @@ input, select, textarea {
 			}
 
 			.row.gtr-uniform {
-				margin-top: -40px;
+				margin-top: -60px;
 			}
 
 				.row.gtr-uniform > * {
@@ -1912,7 +1924,7 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		padding: 4.5em 0 3em 0;
+		padding: 1.5em 0 3em 0;
 	}
 
 	#features-wrapper {
@@ -1926,7 +1938,8 @@ input, select, textarea {
 	}
 
 	#footer-wrapper {
-		padding: 6em 0 8em 0;
+		padding: 3em 0 1em 0;
+	
 	}
 
 /* Header */
@@ -2011,6 +2024,10 @@ input, select, textarea {
 				#nav ul li.current a {
 					background: #444;
 					color: #fff;
+				}
+
+				.current{
+					margin-top: 50px;
 				}
 
 	.dropotron {
@@ -2631,6 +2648,7 @@ input, select, textarea {
 
 			#main-wrapper, #footer-wrapper {
 				padding: 40px 30px 40px 30px;
+			
 			}
 
 		/* Logo */
@@ -2680,9 +2698,10 @@ input, select, textarea {
 		/* Footer */
 
 			#footer section {
-				border-bottom: solid 1px #ccc;
+			
 				padding-bottom: 3em;
 				margin-bottom: 1em !important;
+				
 			}
 
 			#copyright {
@@ -2690,3 +2709,21 @@ input, select, textarea {
 			}
 
 	}
+
+
+#premios,td{
+	border:1px solid;
+	padding:50px;
+	text-align: center;
+}
+
+article,img{
+	width: 100%;
+
+}
+
+#negro{
+	color: black;
+	font-size: 30px;
+}
+
