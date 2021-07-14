@@ -1914,6 +1914,7 @@ input, select, textarea {
 
 	#features-wrapper {
 		padding: 3em 0 3em 0;
+	
 	}
 
 	#main-wrapper {
@@ -2716,6 +2717,9 @@ article,img{
 	width: 20px;
 }
 
+.box.feature #corto{
+padding:20px 0px 0px 0px;
+}
 
 /*  Inicio código insertado */
 
