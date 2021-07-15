@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap')
 
 /*
 	Verti by HTML5 UP
@@ -131,7 +132,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #444;
+		color: black;
 		font-weight: 800;
 	}
 
@@ -190,6 +191,10 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		font-family: 'Kanit', sans-serif;
+		font-size:23px ;
+		color: black;
+		
 	}
 
 /* Container */
@@ -1911,21 +1916,30 @@ input, select, textarea {
 
 	#header-wrapper {
 		padding: 1.5em 0 1em 0;
+		background-color: #134eb9;
+        background-image: linear-gradient(43deg, #134eb9 22%, #ffffff 100%);
+
 	}
 
 	#features-wrapper {
 		padding: 3em 0 3em 0;
+		background: linear-gradient(to right, #ffeeee, #c4c7bf);
 	
 	}
 
 	#main-wrapper {
-		background: #fff;
+
+		background: linear-gradient(to right, #ffeeee, #c4c7bf);
+		/*background: linear-gradient(to right, #ece9e6, #ffffff);*/
 		box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
 		padding: 5em 0 5em 0;
 	}
 
 	#footer-wrapper {
 		padding: 2em 0 0em 0em;
+		background-color: #134eb9;
+background-image: linear-gradient(211deg, #134eb9 0%, #ffffff 70%, #ffffff 84%);
+
 	}
 
 /* Header */
@@ -1991,7 +2005,7 @@ input, select, textarea {
 					transition: background-color .25s ease-in-out;
 					font-weight: 800;
 					letter-spacing: 0.025em;
-					color: #696969;
+					color: black;
 					text-decoration: none;
 					border-radius: 6px;
 					padding: 0.5em 1em 0.5em 1em;
@@ -2720,9 +2734,12 @@ padding:20px 0px 0px 0px;
 
 li.current{/*es para modificar el texto del menu*/
 	margin-top: 45px;
-	font-size: 20px;
+	font-size: 30px;
+    margin-top: 9px;
 	
 }
+	
+
 
 /*  Inicio código insertado */
 
