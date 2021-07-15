@@ -1550,10 +1550,11 @@ table thead {
     width: 100%;
 }
 
-.image.featured {
+.image.featured:hover {
     display: block;
     width: 100%;
     margin: 0 0 2.5em 0;
+    -webkit-transform:scale(1.8);transform:scale(1.2); 
 }
 
 .image.left {
@@ -2593,6 +2594,7 @@ td {
 article,
 img {
     width: 100%;
+   
 }
 
 #negro {
