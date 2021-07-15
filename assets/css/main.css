@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
 /*
 	Verti by HTML5 UP
@@ -2606,6 +2606,9 @@ img {
 
 .box.feature #corto {
     padding: 20px 0px 0px 0px;
+}
+.box.feature #largo {
+    padding: 22px 0px 0px 0px;
 }
 
 li.current {
