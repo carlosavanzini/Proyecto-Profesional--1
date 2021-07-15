@@ -29,7 +29,7 @@
     <meta property="twitter:description" content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-    
+
 
 
 </head>
@@ -43,13 +43,13 @@
 
                 <!-- Logo -->
                 <div id="logo">
-                    <a href="home.html"><img src="images/Guayerd bikes.png" alt=""></a>
+                    <a href="index.html"><img src="images/Guayerd bikes.png" alt=""></a>
                 </div>
 
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li class="current"><a href="home.html">Home</a></li>
+                        <li class="current"><a href="index.html">Home</a></li>
                         <li class="current"><a href="productos.html">Productos</a></li>
                         <li class="current"><a href="contacto.html">Contacto</a></li>
                     </ul>
@@ -101,33 +101,34 @@
                     <!-- <form action=method="POST" class="form"> -->
                     <form action="https://ptsv2.com/t/guayerdDemo/post" method="POST">
 
-                        <div>
+                        <div class="campos">
                             <label for="nombre">Nombre </label>
                             <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
                         </div>
-                        <div>
+                        <div class="campos">
                             <label for="email">Email </label>
                             <input type="email" name="email" placeholder="Ingrese su E-Mail" required>
                         </div>
-                        <div>
+                        <div class="campos">
                             <label for="tema">Tema </label>
                             <!-- Tema --><select name="tema" required>
-								<option value="venta">Venta</option>
-								<option value="trabajo">Trabajo</option>
-								<option value="reparacion">Reparación</option>
-								<option value="otros">Otros</option>
-								</select>
+                                    <option value="seleccionar" option selected="true" disabled>Seleccionar</option>
+                                    <option value="venta">Venta</option>
+                                    <option value="trabajo">Trabajo</option>
+                                    <option value="reparacion">Reparación</option>
+                                    <option value="otros">Otros</option>
+                                    </select>
                         </div>
-                        <div>
+                        <div class="campos">
                             <label for="mensaje">Mensaje </label>
                             <textarea name="mensaje" cols="" rows="" placeholder="Ingrese su consulta" required></textarea>
                         </div>
-                        <div>
+                        <div class="campos">
                             <button name="enviar" class="boton">Enviar</button>
                         </div>
                     </form>
                     <!-- Dirección para el mapa: 
-					Avenida Corrientes 6237, CABA.	-->
+                        Avenida Corrientes 6237, CABA.	-->
 
                     <!-- MAPA -->
                     <h2 id="mapa">Mapa</h2>
@@ -150,53 +151,55 @@
                     <div class="col-3 col-6-medium col-12-small">
 
                         <!-- Links -->
-                            <section class="widget links">
-                                <h3>Cambios y devoluciones</h3>
-                                <ul class="style2">
-                                    <li><a href="#">¿Cuánto tiempo tengo para cambiar un producto?</a></li>
-                                    <li><a href="#">Condiciones para devoluciones y cambios</a></li>
-                                </ul>
-                            </section>
+                        <section class="widget links">
+                            <h3>Cambios y devoluciones</h3>
+                            <ul class="style2">
+                                <li><a href="#">¿Cuánto tiempo tengo para cambiar un producto?</a></li>
+                                <li><a href="#">Condiciones para devoluciones y cambios</a></li>
+                            </ul>
+                        </section>
 
                     </div>
                     <div class="col-3 col-6-medium col-12-small">
 
                         <!-- Links -->
-                            <section class="widget links">
-                                <h3>Preguntas Frecuentes</h3>
-                                <ul class="style2">
-                                    <li><a href="#">Necesito asesoramiento sobre productos</a></li>
-                                    <li><a href="#">Quiero realizar una cancelación de compra ¿Como hago?</a></li>
-                                    
-                                </ul>
-                            </section>
+                        <section class="widget links">
+                            <h3>Preguntas Frecuentes</h3>
+                            <ul class="style2">
+                                <li><a href="#">Necesito asesoramiento sobre productos</a></li>
+                                <li><a href="#">Quiero realizar una cancelación de compra ¿Como hago?</a></li>
+
+                            </ul>
+                        </section>
 
                     </div>
                     <div class="col-3 col-6-medium col-12-small">
 
                         <!-- Links -->
-                            <section class="widget links">
-                                <h3>formas de pagos</h3>
-                                <ul class="style2">
-                                    <li><a href="#"><img src="images/mercadopago-1.png" alt=""></a></li>
-                                  
-                                </ul>
-                            </section>
+                        <section class="widget links">
+                            <h3>formas de pagos</h3>
+                            <ul class="style2">
+                                <li>
+                                    <a href="#"><img src="images/mercadopago-1.png" alt=""></a>
+                                </li>
+
+                            </ul>
+                        </section>
 
                     </div>
                     <div class="col-3 col-6-medium col-12-small">
 
                         <!-- Contact -->
-                            <section class="widget contact last">
-                                <h3>Contactanos</h3>
-                                <ul>
-                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                   
-                                </ul>
-                                <p>Avenida Corrientes 6237, CABA.</p>
-                            </section>
+                        <section class="widget contact last">
+                            <h3>Contactanos</h3>
+                            <ul>
+                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+
+                            </ul>
+                            <p>Avenida Corrientes 6237, CABA.</p>
+                        </section>
 
                     </div>
                 </div>
@@ -204,7 +207,8 @@
                     <div class="col-12">
                         <div id="copyright">
                             <ul class="menu">
-                               <li>&copy; Desarrollares: Equipo 3</li><li>Diseñadores: Equipo 3</li>
+                                <li>&copy; Desarrollares: Equipo 3</li>
+                                <li>Diseñadores: Equipo 3</li>
                             </ul>
                         </div>
                     </div>
