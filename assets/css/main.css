@@ -1554,7 +1554,8 @@ table thead {
     display: block;
     width: 100%;
     margin: 0 0 2.5em 0;
-    -webkit-transform:scale(1.8);transform:scale(1.2); 
+ 
+    -webkit-transform:scale(1.8);transform:scale(1.1); 
 }
 
 .image.left {
@@ -1764,8 +1765,9 @@ ul.menu li:first-child {
 }
 
 .box.feature .image img {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid;
 }
 
 
