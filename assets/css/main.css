@@ -2648,18 +2648,26 @@ ul.menu li:first-child {
 #premios,
 td {
     border: 1px solid;
+    color: black;
     padding: 50px;
     text-align: center;
+    background-color:#f7f3f0
+    ;
 }
 
 article,
 img {
     width: 100%;
+   
 }
 
 #negro {
-    color: black;
+    color: black ;
     font-size: 40px;
+    font-weight: 600;
+    border: 2px solid;
+    
+   
 }
 
 #style2 {
