@@ -207,18 +207,21 @@ body.is-preload *:after {
     transition: none !important;
 }
 
-
-/* 
 input,
 select,
 textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 13pt;
-    color: #696969;
+    /* Inicio código modificado */
+    /*color: #696969;*/
+    color: black;
+    /* Fin código modificado */
     font-weight: 300;
     line-height: 2.25em;
 }
-*/
+
+
+/* WebKit */
 
 a {
     color: #0090c5;
@@ -305,7 +308,6 @@ ol,
 dl,
 table {
     margin-bottom: 2em;
-   
     font-size: 20px;
     color: black;
 }
@@ -1433,6 +1435,7 @@ select {
     flex-wrap: wrap;
     outline: none;
     border-radius: 1em;
+    border: solid 1px black;
 }
 
 textarea {
@@ -1442,14 +1445,33 @@ textarea {
     padding-left: 1em;
     border-radius: 1em;
     outline: none;
+    border: solid 1px black;
 }
 
+.campo_boton {
+    display: flex;
+    justify-content: flex-end;
+    width: 28em;
+}
+
+
+/*
 .boton {
     line-height: 1.2em;
     padding: 0 0.5em;
     width: 5em;
     flex-wrap: wrap;
     margin-left: 14.8em;
+}
+*/
+
+.boton {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.2em;
+    padding: .2em 1em;
+    max-width: 10em;
+    min-width: 5em;
 }
 
 
@@ -1480,6 +1502,9 @@ form textarea {
     padding: 1em;
 }
 
+
+/* Inicio codigo comentado
+
 form ::-webkit-input-placeholder {
     color: #555 !important;
 }
@@ -1499,6 +1524,30 @@ form :-ms-input-placeholder {
 form ::-moz-focus-inner {
     border: 0;
 }
+ Fin codigo comentado
+*/
+
+
+/* Inicio codigo insertado */
+
+form ::-webkit-input-placeholder {
+    color: black;
+}
+
+form :-moz-placeholder {
+    color: black;
+}
+
+form ::-moz-placeholder {
+    color: black;
+}
+
+form :-ms-input-placeholder {
+    color: black;
+}
+
+
+/* Fin codigo insertado*/
 
 
 /* Tables */
@@ -1555,8 +1604,8 @@ table thead {
     width: 100%;
     margin: 0 0 2.5em 0;
     transition: transform 0.7s;
-    -webkit-transform:scale(2);transform:scale(1.1); 
-    
+    -webkit-transform: scale(2);
+    transform: scale(1.1);
 }
 
 .image.left {
@@ -1740,7 +1789,6 @@ ul.menu li:first-child {
 .box {
     background: #fff;
     border-radius: 6px;
-   
     padding: 2em;
 }
 
@@ -1753,8 +1801,7 @@ ul.menu li:first-child {
 
 .box.feature .inner {
     padding: 2em 2em 3em 2em;
-  
-   /* box-shadow: 0px 0px 8px rgba(8, 0, 0, 0.918)*/
+    /* box-shadow: 0px 0px 8px rgba(8, 0, 0, 0.918)*/
 }
 
 .box.feature h2 {
@@ -1773,7 +1820,6 @@ ul.menu li:first-child {
 .box.feature .image img {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-   
 }
 
 
@@ -1891,16 +1937,13 @@ ul.menu li:first-child {
     background: linear-gradient(to right, white, #eaebe7);
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 0em 0 5em 0;
-
 }
-
 
 #footer-wrapper {
     padding: 2em 0 0em 0em;
     background-color: #134eb9;
     background-image: linear-gradient(211deg, #134eb9 0%, #ffffff 70%, #ffffff 84%);
     box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 30%);
-
 }
 
 
@@ -1913,12 +1956,10 @@ ul.menu li:first-child {
 
 /* Logo */
 
-#logo img{
+#logo img {
     display: inline-block;
     width: 200px;
     border-radius: 15px;
-   
-    
 }
 
 #logo h1 {
@@ -2213,7 +2254,10 @@ ul.menu li:first-child {
         width: 100%;
         text-align: center;
         font-size: 1.35em;
-        padding: 0.85em 0 !important;
+        /* Inicio codigo insertado */
+        /*padding: 0.85em 0 !important;*/
+        padding: .5em 3em !important;
+        /* Fin codigo insertado */
     }
     input[type="button"].icon,
     input[type="submit"].icon,
@@ -2486,7 +2530,10 @@ ul.menu li:first-child {
         width: 100%;
         text-align: center;
         font-size: 1.25em !important;
-        padding: 0.65em 0 !important;
+        /* Inicio codigo insertado */
+        /* padding: 0.65em 0 !important;*/
+        padding: 1em 3em !important;
+        /* Fin codigo insertado */
     }
     input[type="button"].icon,
     input[type="submit"].icon,
@@ -2608,7 +2655,6 @@ td {
 article,
 img {
     width: 100%;
-   
 }
 
 #negro {
@@ -2620,16 +2666,14 @@ img {
     width: 20px;
 }
 
-img{
+img {
     box-shadow: 0px 0px 9px 1px black;
-    
-
 }
-
 
 .box.feature #corto {
     padding: 20px 0px 0px 0px;
 }
+
 .box.feature #largo {
     padding: 22px 0px 0px 0px;
 }
@@ -2640,9 +2684,6 @@ li.current {
     font-size: 30px;
     margin-top: 9px;
 }
-
-
-
 
 
 /*  Inicio código insertado */

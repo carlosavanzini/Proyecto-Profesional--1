@@ -65,72 +65,85 @@
 
 /* Inicio agregado de botón con info para mostrar/ocultar contenido */
 
-// Por default lo vamos a setear en 0(Sin desplazamiento) y 1 sería con desplazamiento
-let i1 = 0;
+// Funcion para saber el archivo en el que estamos actualmente
+function filename() {
+    let rutaAbsoluta = self.location.href;
+    let posicionUltimaBarra = rutaAbsoluta.lastIndexOf("/");
+    let rutaRelativa = rutaAbsoluta.substring(posicionUltimaBarra + "/".length, rutaAbsoluta.length);
+    return rutaRelativa;
+}
 
-// Desabilito el contenido por default
-document.getElementById('LeerMas1').style.display = 'none';
-document.getElementById('LeerMas2').style.display = 'none';
-document.getElementById('LeerMas3').style.display = 'none';
 
-// Selecciona el ID button y al ejecutarse el evento clic, llama a la función
+if (filename() == 'productos.html') {
 
-let button1 = document.querySelector('#button1').addEventListener('click', function() {
+    // Por default lo vamos a setear en 0(Sin desplazamiento) y 1 sería con desplazamiento
+    let i1 = 0;
 
-    if (!i1) {
-        // Selecciono el elemento "LeerMas" que es el id del span declarado
-        document.getElementById('LeerMas1').style.display = 'inline';
-        // Selecciono el id "button" para ocultar las características
-        document.getElementById('button1').innerHTML = '- Características';
-        i1 = 1;
-    } else {
-        // Selecciono el elemento "LeerMas" que es el id del span declarado
-        document.getElementById('LeerMas1').style.display = 'none';
-        // Selecciono el id "button" para mostrar las características
-        document.getElementById('button1').innerHTML = '+ Características';
-        i1 = 0;
-    }
+    // Desabilito el contenido por default
+    document.getElementById('LeerMas1').style.display = 'none';
+    document.getElementById('LeerMas2').style.display = 'none';
+    document.getElementById('LeerMas3').style.display = 'none';
 
-})
+    // Selecciona el ID button y al ejecutarse el evento clic, llama a la función
 
-let i2 = 0;
+    let button1 = document.querySelector('#button1').addEventListener('click', function() {
 
-let button2 = document.querySelector('#button2').addEventListener('click', function() {
+        if (!i1) {
+            // Selecciono el elemento "LeerMas" que es el id del span declarado
+            document.getElementById('LeerMas1').style.display = 'inline';
+            // Selecciono el id "button" para ocultar las características
+            document.getElementById('button1').innerHTML = '- Características';
+            i1 = 1;
+        } else {
+            // Selecciono el elemento "LeerMas" que es el id del span declarado
+            document.getElementById('LeerMas1').style.display = 'none';
+            // Selecciono el id "button" para mostrar las características
+            document.getElementById('button1').innerHTML = '+ Características';
+            i1 = 0;
+        }
 
-    if (!i2) {
-        // Selecciono el elemento "LeerMas" que es el id del span declarado
-        document.getElementById('LeerMas2').style.display = 'inline';
-        // Selecciono el id "button" para ocultar las características
-        document.getElementById('button2').innerHTML = '- Características';
-        i2 = 1;
-    } else {
-        // Selecciono el elemento "LeerMas" que es el id del span declarado
-        document.getElementById('LeerMas2').style.display = 'none';
-        // Selecciono el id "button" para mostrar las características
-        document.getElementById('button2').innerHTML = '+ Características';
-        i2 = 0;
-    }
+    })
 
-})
+    let i2 = 0;
 
-let i3 = 0;
+    let button2 = document.querySelector('#button2').addEventListener('click', function() {
 
-let button3 = document.querySelector('#button3').addEventListener('click', function() {
+        if (!i2) {
+            // Selecciono el elemento "LeerMas" que es el id del span declarado
+            document.getElementById('LeerMas2').style.display = 'inline';
+            // Selecciono el id "button" para ocultar las características
+            document.getElementById('button2').innerHTML = '- Características';
+            i2 = 1;
+        } else {
+            // Selecciono el elemento "LeerMas" que es el id del span declarado
+            document.getElementById('LeerMas2').style.display = 'none';
+            // Selecciono el id "button" para mostrar las características
+            document.getElementById('button2').innerHTML = '+ Características';
+            i2 = 0;
+        }
 
-    if (!i3) {
-        // Selecciono el elemento "LeerMas" que es el id del span declarado
-        document.getElementById('LeerMas3').style.display = 'inline';
-        // Selecciono el id "button" para ocultar las características
-        document.getElementById('button3').innerHTML = '- Características';
-        i3 = 1;
-    } else {
-        // Selecciono el elemento "LeerMas" que es el id del span declarado
-        document.getElementById('LeerMas3').style.display = 'none';
-        // Selecciono el id "button" para mostrar las características
-        document.getElementById('button3').innerHTML = '+ Características';
-        i3 = 0;
-    }
+    })
 
-})
+    let i3 = 0;
+
+    let button3 = document.querySelector('#button3').addEventListener('click', function() {
+
+        if (!i3) {
+            // Selecciono el elemento "LeerMas" que es el id del span declarado
+            document.getElementById('LeerMas3').style.display = 'inline';
+            // Selecciono el id "button" para ocultar las características
+            document.getElementById('button3').innerHTML = '- Características';
+            i3 = 1;
+        } else {
+            // Selecciono el elemento "LeerMas" que es el id del span declarado
+            document.getElementById('LeerMas3').style.display = 'none';
+            // Selecciono el id "button" para mostrar las características
+            document.getElementById('button3').innerHTML = '+ Características';
+            i3 = 0;
+        }
+
+    })
+
+}
 
 /* Fin agregado de botón para mostrar/ocultar contenido */
