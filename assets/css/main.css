@@ -310,7 +310,7 @@ table {
     margin-bottom: 2em;
     font-size: 20px;
     color: black;
-    text-align: justify;
+    
 }
 
 
@@ -2690,6 +2690,10 @@ li.current {
     margin-top: 45px;
     font-size: 30px;
     margin-top: 9px;
+}
+
+.justificado{
+    text-align: justify;
 }
 
 
