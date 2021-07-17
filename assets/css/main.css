@@ -1418,7 +1418,6 @@ form {
 label {
     width: 5em;
     flex-wrap: wrap;
-    margin: 1em;
     margin: auto;
     font-weight: bold;
     color: black;
@@ -1482,7 +1481,10 @@ form input[type="email"]:focus,
 form input[type="password"]:focus,
 form select:focus,
 form textarea:focus {
+    /*    
     border-color: #0090c5;
+*/
+    border-color: #01A1DD;
 }
 
 form input[type="text"],
@@ -1923,8 +1925,8 @@ ul.menu li:first-child {
 
 #header-wrapper {
     padding: 1.5em 0 1em 0;
-    background-color: #134eb9;
-    background-image: linear-gradient(43deg, #134eb9 22%, #ffffff 100%);
+    background-color: #212C65;
+    background-image: linear-gradient(43deg, #212C65 22%, #ffffff 100%);
 }
 
 #features-wrapper {
@@ -1941,8 +1943,8 @@ ul.menu li:first-child {
 
 #footer-wrapper {
     padding: 2em 0 0em 0em;
-    background-color: #134eb9;
-    background-image: linear-gradient(211deg, #134eb9 0%, #ffffff 70%, #ffffff 84%);
+    background-color: #212C65;
+    background-image: linear-gradient(211deg, #212C65 0%, #ffffff 70%, #ffffff 84%);
     box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 30%);
 }
 
@@ -2651,23 +2653,19 @@ td {
     color: black;
     padding: 50px;
     text-align: center;
-    background-color:#f7f3f0
-    ;
+    background-color: #f7f3f0;
 }
 
 article,
 img {
     width: 100%;
-   
 }
 
 #negro td {
-    color: black ;
+    color: black;
     font-size: 40px;
     font-weight: 600;
     border: 2px solid;
-    
-   
 }
 
 #style2 {
@@ -2703,8 +2701,8 @@ li.current {
 /* MAPA */
 
 #mapa {
-    /* esto es para separa el nombre de mapa con el formulario de contacto*/
-    padding: 100px 0px 0px 0px;
+    /* Esto es para separar el nombre de mapa con el formulario de contacto*/
+    padding: 2.2em 0em 0em 0em;
 }
 
 .map-responsive {
@@ -2712,6 +2710,7 @@ li.current {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    border: .2em solid;
 }
 
 .map-responsive iframe {
