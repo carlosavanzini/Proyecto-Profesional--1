@@ -2661,13 +2661,16 @@ img {
    
 }
 
-#negro {
+#negro td {
     color: black ;
     font-size: 40px;
     font-weight: 600;
     border: 2px solid;
     
    
+}
+#nuevo{
+    
 }
 
 #style2 {
