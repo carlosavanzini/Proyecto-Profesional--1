@@ -31,7 +31,7 @@ function nombreValid(nombre) {
         nombre = prompt("Ingrese su nombre")
 
         if (nombre.trim() == "") {
-            alert("Ingrese datos válidos")
+            alert("Ha ingresado un nombre inexistente. Por favor ingrese un nombre")
         } else { return localStorage.setItem("nombre", nombre) }
     } while (nombre == "" || nombre !== undefined);
 }
@@ -43,7 +43,7 @@ function guardarEmail(email) {
         localStorage.setItem("email", email);
         enviarMail(mailTo);
     } else {
-        alert("Datos invalidos");
+        alert("El mail ingresado es inexistente. El mail debe contar al menos con '@' y '.'");
     }
 }
 

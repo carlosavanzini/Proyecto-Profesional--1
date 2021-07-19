@@ -31,7 +31,7 @@ function nombreValid(nombre) {
         nombre = prompt("Ingrese su nombre")
 
         if (nombre.trim() == "") {
-            alert("Ingrese datos válidos")
+            alert("Ha ingresado un nombre inexistente. Por favor ingrese un nombre")
         } else { return localStorage.setItem("nombre", nombre) }
     } while (nombre == "" || nombre !== undefined);
 }
@@ -43,7 +43,7 @@ function guardarEmail(email) {
         localStorage.setItem("email", email);
         enviarMail(mailTo);
     } else {
-        alert("Datos invalidos");
+        alert("El mail ingresado es inexistente. El mail debe contar al menos con '@' y '.'");
     }
 }
 
@@ -102,19 +102,24 @@ function des() {
     console.log("")
     switch (descuento) {
         case 1:
-            alert("5HOTSALE para obtener un 5% de descuento")
+            alert("Estimado/a " + localStorage.getItem("nombre") + ". Gracias por elegirnos! Le obsequiamos el código 5HOTSALE para obtener un 5% de descuento con su compra")
+                //alert("5HOTSALE para obtener un 5% de descuento")
             break;
         case 2:
-            alert("10HOTSALE para obtener un 10% de descuento")
+            alert("Estimado/a " + localStorage.getItem("nombre") + ". Gracias por elegirnos! Le obsequiamos el código 10HOTSALE para obtener un 10% de descuento con su compra")
+                //alert("10HOTSALE para obtener un 10% de descuento")
             break;
         case 3:
-            alert("15HOTSALE para obtener un 15% de descuento")
+            alert("Estimado/a " + localStorage.getItem("nombre") + ". Gracias por elegirnos! Le obsequiamos el código 15HOTSALE para obtener un 15% de descuento con su compra")
+                //alert("15HOTSALE para obtener un 15% de descuento")
             break;
         case 4:
-            alert("20HOTSALE para obtener un 20% de descuento")
+            alert("Estimado/a " + localStorage.getItem("nombre") + ". Gracias por elegirnos! Le obsequiamos el código 20HOTSALE para obtener un 20% de descuento con su compra")
+                //alert("20HOTSALE para obtener un 20% de descuento")
             break;
         case 1:
-            alert("25HOTSALE para obtener un 25% de descuento")
+            alert("Estimado/a " + localStorage.getItem("nombre") + ". Gracias por elegirnos! Le obsequiamos el código 25HOTSALE para obtener un 25% de descuento con su compra")
+                //alert("25HOTSALE para obtener un 25% de descuento")
             break;
 
         default:
