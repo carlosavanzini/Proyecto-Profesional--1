@@ -83,7 +83,8 @@ if (localStorage.getItem("confirmacion")==null){
   }
 
   function des(){
-      let descuento= Math.floor(Math.random() * 5) + 1;
+      let descuento= Math.floor(Math.random() * 5)+1;
+      console.log("")
       switch (descuento) {
           case 1:
               alert("5HOTSALE para obtener un 5% de descuento")
