@@ -213,19 +213,18 @@ function guardarEnviarNovedades() {
 function guardarSaludo(nombre) {
 
     // Obtener la hora del día
-    const fecha = new Date();
-    const hora = fecha.getHours();
-
+    let fecha = new Date();
+    let hora = fecha.getHours();
+    console.log(hora);
     if (hora > 00 && hora <= 06) {
         alert("Buenas madrugadas " + nombre);
     } else if (hora > 06 && hora <= 12) {
         alert("Buen día " + nombre);
     } else if (hora > 12 && hora <= 19) {
         alert("Buenas tardes " + nombre);
-    } else if (hora > 19 && hora <= 00) {
+    } else if (hora > 19 && hora <= 24) {
         alert("Buenas noches " + nombre);
     }
 }
-
 
 guardarLocalStorage();
