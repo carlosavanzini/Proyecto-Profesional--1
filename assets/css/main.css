@@ -2745,5 +2745,14 @@ li.current {
     position: absolute;
 }
 
+/*codigo para eliminar los spin button de un campo numerico*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+
 
 /*  Fin código insertado */

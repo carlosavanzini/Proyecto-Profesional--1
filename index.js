@@ -66,35 +66,3 @@ function enviarMail(mail) {
     }
 }
 
-function saludaHoraInicio() {
-    if (hora >= 00 && hora <= 06) {
-        if (localStorage.getItem("nombre") != null) {
-            alert("Buenas madrugadas " + localStorage.getItem("nombre") + ". Disfrute la página!!!");
-        } else {
-            alert("Buenas madrugadas. Disfrute la página!!!")
-        }
-    }
-    if (hora >= 07 && hora <= 12) {
-        if (localStorage.getItem("nombre") != null) {
-            alert("Buen día " + localStorage.getItem("nombre") + ". Disfrute la página!!!");
-        } else {
-            alert("Buen día. Disfrute la página!!!")
-        }
-    }
-    if (hora >= 13 && hora <= 18) {
-        if (localStorage.getItem("nombre") != null) {
-            alert("Buenas tardes " + localStorage.getItem("nombre") + ". Disfrute la página!!!");
-        } else {
-            alert("Buenas tardes. Disfrute la página!!!")
-        }
-    }
-    if (hora >= 19 && hora <= 23) {
-        if (localStorage.getItem("nombre") != null) {
-            alert("Buenas noches " + localStorage.getItem("nombre") + ". Disfrute la página!!!");
-        } else {
-            alert("Buenas noches. Disfrute la página!!!")
-        }
-    }
-}
-
-saludaHoraInicio()
