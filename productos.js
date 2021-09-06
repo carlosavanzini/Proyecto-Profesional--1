@@ -16,7 +16,6 @@ if (localStorage.getItem("confirmacion") == null) {
     }
 }
 
-
 //Funciones
 
 //Inicio de usuario
