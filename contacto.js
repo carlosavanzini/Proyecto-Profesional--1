@@ -67,3 +67,45 @@ function enviarMail(mail) {
 }
 
 
+// Envío de formulario.
+let respuestaForm = document.querySelector("#respuestaFormulario");
+const form = document.querySelector(".form");
+
+function contactForm() {
+
+    document.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+
+        fetch("https://formsubmit.co/ajax/albertodamianlopez@gmail.com", {
+            method: "POST",
+            // Acá esta haciendo todo el parseo por el campo "name" de cada input.
+            body: new FormData(e.target) // Probar con el server de guayerd para ver si hay que convertirlo o no con el json.stringify
+        })
+
+        .then(res => res.ok ? res.json() : Promise.reject(res))
+            // Si esta todo OK, muestro mensaje por pantalla que todo se realizó correctamente.
+            .then(json => {
+                console.log(json);
+                //respuestaForm.innerHTML = `<p> ${json.message} </p>`
+                respuestaForm.innerHTML = "Su formulario fue enviado con éxito"
+                    // Limpio los valores de los input
+                form.reset();
+            })
+            // En caso de error, devuelvemos un error personalizado
+            .catch(err => {
+                console.log(err);
+                //let msg = err.statusText || "Ocurrió un error al enviar, por favor intente nuevamente";
+                //respuestaForm.innerHTML = `<p> Error ${err.status}: ${msg} </p>`
+                respuestaForm.innerHTML = "Ocurrió un error al enviar, por favor intente nuevamente"
+            })
+            // Contamos 3 segundos y finalizamos la petición.
+            .finally(() => setTimeout(() => {
+                console.log("Fin de la petición");
+                respuestaForm.innerHTML = ``;
+            }, 3000));
+    });
+
+}
+
+document.addEventListener("DOMContentLoaded", contactForm);

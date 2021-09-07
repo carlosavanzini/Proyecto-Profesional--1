@@ -31,11 +31,14 @@
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <script>
-        (function(h,e,a,t,m,p) {
-        m=e.createElement(a);m.async=!0;m.src=t;
-        p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
-        })(window,document,'script','https://u.heatmap.it/log.js');
-        </script>
+        (function(h, e, a, t, m, p) {
+            m = e.createElement(a);
+            m.async = !0;
+            m.src = t;
+            p = e.getElementsByTagName(a)[0];
+            p.parentNode.insertBefore(m, p);
+        })(window, document, 'script', 'https://u.heatmap.it/log.js');
+    </script>
 
 </head>
 
@@ -103,24 +106,24 @@
 
                     <h2>Contacto</h2>
 
-                    <!-- <form action=method="POST" class="form"> -->
-                    <form action="https://demo2420474.mockable.io/submitForm" method="POST">
-
+                    <!-- <form action=method="POST" class="form"> https://demo2420474.mockable.io/submitForm-->
+                    <!-- <form action="https://formsubmit.co/your@email.com" method="POST"> -->
+                    <form class="form">
                         <div class="campos">
-                            <label for="nombre">Nombre </label>
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" placeholder="Ingrese su nombre" required>
                         </div>
                         <div class="campos">
-                            <label for="email">Email </label>
+                            <label for="email">Email</label>
                             <input type="email" name="email" placeholder="Ingrese su E-Mail" required>
                         </div>
                         <div class="campos">
-                            <label for="phone">Teléfono </label>
+                            <label for="phone">Teléfono</label>
                             <input type="number" name="phone" placeholder="Ingrese su teléfono" required>
                         </div>
                         <div class="campos">
-                            <label for="tema">Tema </label>
-                            <!-- Tema --><select name="tema" required>
+                            <label for="subject">Tema</label>
+                            <!-- Tema --><select name="subject" required>
                                     <option value="seleccionar" option selected="true" disabled>Seleccionar</option>
                                     <option value="venta">Venta</option>
                                     <option value="trabajo">Trabajo</option>
@@ -129,12 +132,13 @@
                                     </select>
                         </div>
                         <div class="campos">
-                            <label for="mensaje">Mensaje </label>
-                            <textarea name="mensaje" cols="" rows="" placeholder="Ingrese su consulta" required></textarea>
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" cols="" rows="" placeholder="Ingrese su consulta" required></textarea>
                         </div>
                         <div class="campo_boton">
                             <button name="enviar" class="boton">Enviar</button>
                         </div>
+                        <span id="respuestaFormulario"></span>
                     </form>
                     <!-- Dirección para el mapa: 
                         Avenida Corrientes 6237, CABA.	-->
