@@ -66,3 +66,23 @@ function enviarMail(mail) {
     }
 }
 
+// Selector de la imagen banner
+const imgBanner = document.querySelector("#imagenbanner");
+
+let urlBanner = "http://demo2420474.mockable.io/getHomeBanner";
+
+fetch(urlBanner)
+    .then(respuestaBanner => respuestaBanner.ok ? respuestaBanner.json() : Promise.reject(respuestaBanner))
+    // Si esta todo OK
+    .then(data => {
+        console.log(data);
+        imgBanner.innerHTML = `<a href="${data.link}"><img src="${data.imgUrl}" alt="${data.title}"></a>`
+    })
+    // En caso de error, devuelvemos un error 
+    .catch(err => {
+        console.log(err);
+    })
+    // Contamos 1 segundo y finalizamos la petición.
+    .finally(() => setTimeout(() => {
+        console.log("Fin de la petición");
+    }, 1000));

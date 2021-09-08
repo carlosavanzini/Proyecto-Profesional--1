@@ -74,7 +74,8 @@ fetch(urlCuponDescuento)
     // Si esta todo OK, muestro mensaje por alert como antes.
     .then(data => {
         console.log(data);
-        alert(`Obtuviste el cupón ${data.text} para obtener un ${data.discountPercentage}% de descuento`)
+        //alert(`Cupón ${data.text} para obtener un ${data.discountPercentage}% de descuento`)
+        Swal.fire(`Cupón ${data.text} para obtener un ${data.discountPercentage}% de descuento`)
     })
     // En caso de error, devuelvemos un error 
     .catch(err => {
@@ -95,8 +96,9 @@ function contactForm() {
     document.addEventListener("submit", (e) => {
 
         e.preventDefault();
-
-        fetch("https://formsubmit.co/ajax/albertodamianlopez@gmail.com", {
+        // aca si quiero poner el valor para convertir a json
+        //fetch("https://formsubmit.co/ajax/albertodamianlopez@gmail.com", {
+        fetch("https://demo2420474.mockable.io/submitForm", {
             method: "POST",
             // Acá esta haciendo todo el parseo por el campo "name" de cada input.
             body: new FormData(e.target) // Probar con el server de guayerd para ver si hay que convertirlo o no con el json.stringify
