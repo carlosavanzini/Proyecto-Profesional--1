@@ -66,6 +66,25 @@ function enviarMail(mail) {
     }
 }
 
+// Cupón de descuento obtenido desde el servidor.
+let urlCuponDescuento = "https://demo2420474.mockable.io/getCoupon";
+
+fetch(urlCuponDescuento)
+    .then(respuestaDes => respuestaDes.ok ? respuestaDes.json() : Promise.reject(respuestaDes))
+    // Si esta todo OK, muestro mensaje por alert como antes.
+    .then(data => {
+        console.log(data);
+        alert(`Obtuviste el cupón ${data.text} para obtener un ${data.discountPercentage}% de descuento`)
+    })
+    // En caso de error, devuelvemos un error 
+    .catch(err => {
+        console.log(err);
+    })
+    // Contamos 1 segundo y finalizamos la petición.
+    .finally(() => setTimeout(() => {
+        console.log("Fin de la petición");
+    }, 1000));
+
 
 // Envío de formulario.
 let respuestaForm = document.querySelector("#respuestaFormulario");
