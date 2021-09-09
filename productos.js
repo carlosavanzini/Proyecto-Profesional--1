@@ -65,3 +65,35 @@ function enviarMail(mail) {
     }
 }
 
+// mostrar los productos
+
+let urlproductos = "https://demo2420474.mockable.io/productList";
+const productos = document.querySelector("#produtosServidor");
+
+fetch(urlproductos)
+    .then(respuestaProd => respuestaProd.ok ? respuestaProd.json() : Promise.reject(respuestaProd))
+    // Si esta todo OK, muestro mensaje por alert como antes.
+    .then(data => {
+        console.log(data);
+        for (let i = 0; i < data.length; i++) {
+                productos.innerHTML+=`<p>${data[i].title}</p>`;
+                productos.innerHTML+=`<p>${data[i].description}</p>`;
+                productos.innerHTML+=`<img src="${data[i].imgUrl}"></img>`;
+                productos.innerHTML+=`<p>Unidades:${data[i].inStock}</p>`;
+                productos.innerHTML+=`<p>Precio: ${data[i].price}$</p>`;
+                productos.innerHTML+=`<p>Divisa: ${data[i].currency}</p>`;
+                productos.innerHTML+=`<p>Precio de descuento: ${data[i].discountPrice}</p>`;
+                
+            
+        }
+        //`<img src="${data.imgUrl}"></img>`
+        
+    })
+    // En caso de error, devuelvemos un error 
+    .catch(err => {
+        console.log(err);
+    })
+    // Contamos 1 segundo y finalizamos la petición.
+    .finally(() => setTimeout(() => {
+        console.log("Fin de la petición");
+    }, 1000));
