@@ -2755,3 +2755,30 @@ input[type=number] { -moz-appearance:textfield; }
 
 
 /*  Fin código insertado */
+
+/*javascripavanzado*/
+#t{
+    font-size: 40px;
+    text-align: center;
+}
+#descripcion{
+}
+#imagen{
+ text-align: center;
+    width:100%;
+ 
+    
+}
+
+#perro img{
+    text-align: center;
+       width: 50%;
+       background-color: red;
+       
+   }
+
+#unidades,#precio,#divisa,#precioDes{
+text-align: center;
+
+    
+}
