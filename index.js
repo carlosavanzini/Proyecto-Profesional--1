@@ -111,13 +111,13 @@ if (nombreObjeto === "" || emailObjeto === "" || confirmacion == false) {
 
     console.log(datos);
 
-    fetch("https://formsubmit.co/ajax/albertodamianlopez@gmail.com", {
-        //fetch("https://demo2420474.mockable.io/submitForm", {
+    //fetch("https://formsubmit.co/ajax/albertodamianlopez@gmail.com", {
+    fetch("https://demo2420474.mockable.io/userData", {
         method: "POST",
-        headers: { // Cabeceras HTTP
-            // Ennviamos los datos en formato JSON
-            'Content-Type': 'application/json'
-        },
+        // headers: { // Cabeceras HTTP
+        //     // Ennviamos los datos en formato JSON
+        //     'Content-Type': 'application/json'
+        // },
         // El cuerpo de la petición es una cadena de texto con los datos en formato JSON
         body: JSON.stringify(datos)
     })
