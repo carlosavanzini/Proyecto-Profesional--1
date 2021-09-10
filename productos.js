@@ -69,7 +69,6 @@ function enviarMail(mail) {
 
 let urlproductos = "https://demo2420474.mockable.io/productList";
 const productos = document.querySelector("#titulo");
-const fot = document.querySelector("#foto")
 
 fetch(urlproductos)
     .then(respuestaProd => respuestaProd.ok ? respuestaProd.json() : Promise.reject(respuestaProd))
@@ -79,13 +78,8 @@ fetch(urlproductos)
         for (let i = 0; i < data.length; i++) {
                  productos.innerHTML+=`<p id="t">${data[i].title}</p>`;
                  productos.innerHTML+=`<div id="descripcion"><p>${data[i].description}</p></div>`;
-                 productos.innerHTML+=`<div id="imagen"><div id="perro"><img src="${data[i].imgUrl}"></img></div></div>`;
-                 productos.innerHTML+=`<p id="unidades">Unidades:${data[i].inStock}</p>`;
-                 productos.innerHTML+=`<p id="precio">Precio: ${data[i].price}$</p>`;
-                 productos.innerHTML+=`<p id="divisa">Divisa: ${data[i].currency}</p>`;
-                 productos.innerHTML+=`<p id="precioDes">Precio de descuento: ${data[i].discountPrice}</p>`;
-                
-            
+                 productos.innerHTML+=`<div id= "total"><div id="imagen"><div id="perro"><img src="${data[i].imgUrl}"></img><p id="hola">Unidades:${data[i].inStock}</p><p id="hola"> Precio: ${data[i].price}$</p><p id="hola"> Divisa: ${data[i].currency}</p><p id="hola"> Precio de descuento: ${data[i].discountPrice}$</p></div></div></div>`;
+
         }
         //`<img src="${data.imgUrl}"></img>`
         

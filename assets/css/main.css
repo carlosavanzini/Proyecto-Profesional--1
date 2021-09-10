@@ -2758,24 +2758,20 @@ input[type=number] { -moz-appearance:textfield; }
 
 /*javascripavanzado*/
 #t{
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
-    margin-top: px;
 }
 #descripcion{
 }
 #imagen{
- text-align: center;
-    width:100%;
- 
-    
+width:100%;
+text-align: center;
+border: solid black 0.2;
 }
 
 #perro img{
     text-align: center;
-       width: 50%;
-       background-color: red;
-      
+       width: 100%;
        
    }
 
@@ -2787,7 +2783,15 @@ input[type=number] { -moz-appearance:textfield; }
 
 #unidades,#precio,#divisa,#precioDes{
 text-align: center;
-margin-top: 15px;
+margin-top: 15px; 
+}
 
+#hola{
+    text-align: center
+}
+
+#total{
+    border: 1px solid black;
+    margin: 30px 30% 0px 30%;
     
 }
