@@ -313,6 +313,9 @@ table {
     
 }
 
+#pa,p{
+    margin-bottom: 0em;
+}
 
 /* Container */
 
@@ -2758,10 +2761,13 @@ input[type=number] { -moz-appearance:textfield; }
 
 /*javascripavanzado*/
 #t{
-    font-size: 45px;
+font-size: 40px;
     text-align: center;
+    padding: 0px 0px 20px 0px;
 }
 #descripcion{
+    text-align: justify ;
+    padding: 0 20px;
 }
 #imagen{
 width:100%;
@@ -2771,7 +2777,9 @@ border: solid black 0.2;
 
 #perro img{
     text-align: center;
-       width: 100%;
+    width: 90%;
+   
+   
        
    }
 
@@ -2786,12 +2794,30 @@ text-align: center;
 margin-top: 15px; 
 }
 
-#hola{
-    text-align: center
-}
 
 #total{
     border: 1px solid black;
-    margin: 30px 30% 0px 30%;
-    
+    width: 400px;
+}
+
+
+
+#tema{
+    border:1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20PX;
+    text-align: center;
+    margin: 0px 33% 0px 33%;
+    box-shadow: 2px 2px 2px 1px #212c65;
+}
+
+#parrafo{
+    text-align: justify;
+}
+
+.box{
+    display: flex;
+    background: linear-gradient(to right, white, #eaebe7);
+
 }
