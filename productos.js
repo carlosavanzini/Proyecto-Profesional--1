@@ -76,7 +76,8 @@ fetch(urlproductos)
     .then(data => {
         console.log(data);
         for (let i = 0; i < data.length; i++) {
-                 productos.innerHTML+=`<div class="box">
+                 productos.innerHTML+=` 
+                                        <div class="box">
                                         <div id="tema">
                                          <div id="t">${data[i].title}</div>
                                          <div id="perro"><img src="${data[i].imgUrl}"></img></div>
@@ -86,26 +87,9 @@ fetch(urlproductos)
                                          <p id="pa">Precio de descuento: ${data[i].discountPrice}$</p>
                                          <div id="parrafo">${data[i].description}</div>
                                         </div>
-                                        </div>
-                 
-                    
-                                         
-               </div>`
-                //  `<div id="contenedorProducto">
-                //                     <div id="tema">
-                //                     <div id="t">${data[i].title}</div>
-                //                         <div id="perro"><img src="${data[i].imgUrl}"></img></div>
-                //                         <div>Unidades:${data[i].inStock}</div>
-                //                         <div>Precio: ${data[i].price}$</div>
-                //                         <div>Divisa: ${data[i].currency}</div>
-                //                         <div>Precio de descuento: ${data[i].discountPrice}$</div>
-                //                         <div id="parrafo">${data[i].description}</div></div>
-                //                         </div><p></p>`
+                                        </div>`
+                      }
 
-                                           
-
-        }
-        //`<img src="${data.imgUrl}"></img>`
         
     })
     // En caso de error, devuelvemos un error 
