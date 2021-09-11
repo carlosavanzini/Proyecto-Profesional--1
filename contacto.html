@@ -111,19 +111,28 @@
                     <form class="form">
                         <div class="campos">
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" placeholder="Ingrese su nombre" required>
+                            <input type="text" id="nombre" name="name" placeholder="Ingrese su nombre">
+                        </div>
+                        <div>
+                            <span id="mostrarNombre"></span>
                         </div>
                         <div class="campos">
                             <label for="email">Email</label>
-                            <input type="email" name="email" placeholder="Ingrese su E-Mail" required>
+                            <input type="email" id="email" name="email" placeholder="Ingrese su E-Mail">
+                        </div>
+                        <div>
+                            <span id="mostrarEmail"></span>
                         </div>
                         <div class="campos">
                             <label for="phone">Teléfono</label>
-                            <input type="number" name="phone" placeholder="Ingrese su teléfono" required>
+                            <input type="number" id="telefono" name="phone" placeholder="Ingrese su teléfono">
+                        </div>
+                        <div>
+                            <span id="mostrarTelefono"></span>
                         </div>
                         <div class="campos">
                             <label for="subject">Tema</label>
-                            <!-- Tema --><select name="subject" required>
+                            <!-- Tema --><select name="subject" id="asunto">
                                     <option value="seleccionar" option selected="true" disabled>Seleccionar</option>
                                     <option value="venta">Venta</option>
                                     <option value="trabajo">Trabajo</option>
@@ -131,12 +140,18 @@
                                     <option value="otros">Otros</option>
                                     </select>
                         </div>
+                        <div>
+                            <span id="mostrarAsunto"></span>
+                        </div>
                         <div class="campos">
                             <label for="message">Mensaje</label>
-                            <textarea name="message" cols="" rows="" placeholder="Ingrese su consulta" required></textarea>
+                            <textarea name="message" id="mensaje" cols="" rows="" placeholder="Ingrese su consulta"></textarea>
+                        </div>
+                        <div>
+                            <span id="mostrarMensaje"></span>
                         </div>
                         <div class="campo_boton">
-                            <button name="enviar" class="boton">Enviar</button>
+                            <button name="enviar" type="submit" class="boton">Enviar</button>
                         </div>
                         <span id="respuestaFormulario"></span>
                     </form>
