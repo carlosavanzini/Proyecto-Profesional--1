@@ -310,12 +310,13 @@ table {
     margin-bottom: 2em;
     font-size: 20px;
     color: black;
-    
 }
 
-#pa,p{
+#pa,
+p {
     margin-bottom: 0em;
 }
+
 
 /* Container */
 
@@ -1412,7 +1413,7 @@ form {
     padding: 0 1em;
 }
 
-#oferta{
+#oferta {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1422,7 +1423,6 @@ form {
     margin-left: auto;
     margin-right: auto;
     padding: 0 1em;
-    
 }
 
 .campos {
@@ -1957,10 +1957,6 @@ ul.menu li:first-child {
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 0em 0 5em 0;
 }
-
-
-
-
 
 #footer-wrapper {
     padding: 2em 0 0em 0em;
@@ -2712,11 +2708,9 @@ li.current {
     margin-top: 9px;
 }
 
-.justificado{
+.justificado {
     text-align: justify;
 }
-
-
 
 
 /*  Inicio código insertado */
@@ -2748,64 +2742,68 @@ li.current {
     position: absolute;
 }
 
+
 /*codigo para eliminar los spin button de un campo numerico*/
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-    }
-input[type=number] { -moz-appearance:textfield; }
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 
 /*  Fin código insertado */
 
+
 /*javascripavanzado*/
-#t{
-font-size: 40px;
+
+#t {
+    font-size: 40px;
     text-align: center;
     padding: 0px 0px 20px 0px;
 }
-#descripcion{
-    text-align: justify ;
+
+#descripcion {
+    text-align: justify;
     padding: 0 20px;
 }
-#imagen{
-width:100%;
-text-align: center;
-border: solid black 0.2;
 
+#imagen {
+    width: 100%;
+    text-align: center;
+    border: solid black 0.2;
 }
 
-#perro img{
+#perro img {
     text-align: center;
     width: 90%;
     border-radius: 20px;
-   
-   
-       
-   }
-
-   #perro img:hover{
-    -webkit-transform:scale(0.5);transform:scale(1.2); 
-   }
-
- 
-
-#unidades,#precio,#divisa,#precioDes{
-text-align: center;
-margin-top: 15px; 
 }
 
+#perro img:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.2);
+}
 
-#total{
+#unidades,
+#precio,
+#divisa,
+#precioDes {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#total {
     border: 1px solid black;
     width: 400px;
 }
 
-
-
-#tema{
-    border:1px solid black;
+#tema {
+    border: 1px solid black;
     border-radius: 20px;
     width: 500px;
     padding: 20PX;
@@ -2814,15 +2812,19 @@ margin-top: 15px;
     box-shadow: 2px 2px 2px 1px #212c65;
 }
 
-#parrafo{
+#parrafo {
     text-align: justify;
 }
 
-
-#titulo{
+#titulo {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+}
+
+.resaltado {
+    background-color: rgb(170, 219, 211);
+    border-radius: 20px;
+    font-weight: bold;
 }

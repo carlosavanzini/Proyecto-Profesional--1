@@ -76,21 +76,35 @@ fetch(urlproductos)
     .then(data => {
         console.log(data);
         for (let i = 0; i < data.length; i++) {
-                 productos.innerHTML+=` 
+
+            //Si llega el campo "discountPrice", mostrar el campo "price" tachado y poner el valor con descuento resaltado
+
+            // Si no viene nada en el precio de descuento, lo seteamos en 0.
+            if (isNaN(data[i].discountPrice)) {
+                data[i].discountPrice = 0;
+                //console.log("precio 0")
+            } else {
+                // Si viene el descuento, tachamos el precio
+                data[i].price = `<del>${data[i].price}</del>`
+                    //console.log("con precio descuento")
+                data[i].discountPrice = `<span class="resaltado">${data[i].discountPrice}</p>`
+            }
+
+            productos.innerHTML += ` 
                                         <div class="box">
                                         <div id="tema">
                                          <div id="t">${data[i].title}</div>
                                          <div id="perro"><img src="${data[i].imgUrl}"></img></div>
-                                         <p id="pa">Unidades:${data[i].inStock}</p>
-                                         <p id="pa">Precio: ${data[i].price}</p>
+                                         <p id="pa">Unidades: ${data[i].inStock}</p>
+                                         <p id="pa">Precio: $ ${data[i].price}</p>
                                          <p ip="pa">Divisa: ${data[i].currency}</p>
-                                         <p id="pa">Precio de descuento: ${data[i].discountPrice}$</p>
+                                         <p id="pa">Precio de descuento: $ ${data[i].discountPrice}</p>
                                          <div id="parrafo">${data[i].description}</div>
                                         </div>
                                         </div>`
-                      }
+        }
 
-        
+
     })
     // En caso de error, devuelvemos un error 
     .catch(err => {
