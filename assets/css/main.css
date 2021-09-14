@@ -2762,7 +2762,7 @@ input[type=number] {
 /*javascripavanzado*/
 
 #t {
-    font-size: 45px;
+    font-size: 30px;
     text-align: center;
     padding: 0px 0px 20px 0px;
 }
@@ -2786,7 +2786,7 @@ input[type=number] {
 
 #perro img:hover {
     -webkit-transform: scale(0.5);
-    transform: scale(1.9);
+    transform: scale(1.7);
 }
 
 #unidades,
@@ -2805,7 +2805,7 @@ input[type=number] {
 #tema {
     border: 1px solid black;
     border-radius: 20px;
-    width: 300px;
+    width: 370px;
 
     padding: 20PX;
     text-align: center;
