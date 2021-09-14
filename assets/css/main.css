@@ -2786,7 +2786,7 @@ input[type=number] {
 
 #perro img:hover {
     -webkit-transform: scale(0.5);
-    transform: scale(1.7);
+    transform: scale(1.6);
 }
 
 #unidades,
