@@ -12,7 +12,39 @@ let emailObjeto = "";
 let confirmacionMailObjeto = Boolean;
 
 
-if (localStorage.getItem("confirmacion") == null) {
+if (localStorage.getItem("confirmacionMailNovedades") == null) {
+
+    consultarNovedadesMail()
+}
+
+// Consultar al usuario si desea obtener novedades por mail.
+function consultarNovedadesMail() {
+
+    (async() => {
+
+        const { value: confirmacionMail } = await Swal.fire({
+            title: "¿Desea recibir mails con novedades?",
+            showConfirmButton: true,
+            confirmButtonText: 'Sí',
+            showCancelButton: true,
+            cancelButtonText: 'No',
+            showCloseButton: true
+        });
+
+        // Si confirmó que desea recibir mails con novedades
+        if (confirmacionMail) {
+
+            localStorage.setItem("confirmacionMailNovedades", confirmacionMail)
+            confirmacionMailObjeto = confirmacionMail;
+            consultarNombreMail()
+        } else {
+            localStorage.setItem("confirmacionMailNovedades", "false") // Lo fuerzo en false
+        }
+    })() // es una función autoinvocada
+
+}
+
+function consultarNombreMail() {
 
     (async() => {
 
@@ -27,32 +59,17 @@ if (localStorage.getItem("confirmacion") == null) {
 
         // Si confirmó el ingreso del usuario y mail.
         if (confirmacion) {
-            localStorage.setItem("confirmacion", confirmacion)
-            inicioUsuarioNombre()
-                //alert(confirmacion)
+            localStorage.setItem("confirmacionNombreEmail", confirmacion)
+            nombreValid()
         } else {
-            localStorage.setItem("confirmacion", "false") // Lo fuerzo en false
+            localStorage.setItem("confirmacionNombreEmail", "false") // Lo fuerzo en false
         }
 
     })() // es una función autoinvocada
-
-}
-
-//Funciones
-
-//Inicio de usuario
-function inicioUsuarioNombre() {
-    nombreValid()
-
-}
-
-function inicioUsuarioMail() {
-    emailValid()
-
 }
 
 //Guardar y validar nombre
-function nombreValid(nombre) {
+function nombreValid() {
 
     // inicio 
     (async() => {
@@ -72,7 +89,7 @@ function nombreValid(nombre) {
         if (nombre) {
             nombreObjeto = nombre;
             localStorage.setItem("nombre", nombre)
-            inicioUsuarioMail()
+            emailValid()
 
         }
 
@@ -81,7 +98,7 @@ function nombreValid(nombre) {
 
 }
 
-function emailValid(email) {
+function emailValid() {
 
     (async() => {
 
@@ -98,60 +115,27 @@ function emailValid(email) {
                     if (value.includes("@") && value.includes(".")) {} else {
                         return "Ha ingresado un mail incompleto. Por favor ingrese un mail con con '@' y '.' "
                     }
-
                 }
             }
         });
 
         if (MailUsuario) {
             emailObjeto = MailUsuario;
-            enviarMail(mailTo);
+            //enviarMail();
             localStorage.setItem("email", MailUsuario);
-            // enviardatos();
+            Swal.fire(`Estaremos enviandole las últimas novedades a ${MailUsuario}`)
+            enviarDatos();
         }
 
     })() // es una función autoinvocada
     // fin
-
-
-
-}
-
-//Preguntar para enviar mail
-function enviarMail(mail) {
-
-    (async() => {
-
-        const { value: confirmacionMail } = await Swal.fire({
-            title: "¿Desea recibir mails con novedades?",
-            showConfirmButton: true,
-            confirmButtonText: 'Sí',
-            showCancelButton: true,
-            cancelButtonText: 'No',
-            showCloseButton: true
-        });
-
-        // Si confirmó el ingreso del usuario y mail.
-
-        if (confirmacionMail) {
-            Swal.fire(`Estaremos enviandole las últimas novedades a ${localStorage.getItem("email")}`)
-            localStorage.setItem("confirmacionMailNovedades", confirmacionMail)
-            confirmacionMailObjeto = confirmacionMail;
-            //alert(confirmacionMail)
-            enviarDatos();
-
-        } else {
-            localStorage.setItem("confirmacionMailNovedades", "false") // Lo fuerzo en false
-        }
-
-    })() // es una función autoinvocada
 
 }
 
 ///////////// Enviamos los datos del usuario. ///////////////////
 
 function enviarDatos() {
-    // Si no se completó con info en el local storage, no enviamos nada al servidor
+    // Si no se completó el mail con la info en el local storage, no enviamos nada al servidor
     if (emailObjeto === "") {
 
         console.log("No se van a enviar los datos del usuario al servidor");
