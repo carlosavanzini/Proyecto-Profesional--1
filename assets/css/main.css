@@ -2762,7 +2762,7 @@ input[type=number] {
 /*javascripavanzado*/
 
 #t {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     padding: 0px 0px 20px 0px;
 }
@@ -2786,7 +2786,7 @@ input[type=number] {
 
 #perro img:hover {
     -webkit-transform: scale(0.5);
-    transform: scale(1.2);
+    transform: scale(1.9);
 }
 
 #unidades,
@@ -2805,7 +2805,8 @@ input[type=number] {
 #tema {
     border: 1px solid black;
     border-radius: 20px;
-    width: 500px;
+    width: 300px;
+
     padding: 20PX;
     text-align: center;
     background-color: white;
@@ -2817,7 +2818,7 @@ input[type=number] {
 }
 
 #titulo {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
