@@ -146,10 +146,7 @@ function enviarMail(mail) {
 
     })() // es una función autoinvocada
 
-
-
 }
-
 
 ///////////// Enviamos los datos del usuario. ///////////////////
 
